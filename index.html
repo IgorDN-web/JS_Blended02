@@ -4,7 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS_blended02</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="title">Базовые операции по DOM</h1>
+      <ul class="list">
+        <li data-topic="navigation">
+          <h3>Навигация по DOM</h3>
+          <p>
+            Доступ к DOM начинается с объекта document, из него можно добраться
+            к любым элементам.
+          </p>
+        </li>
+        <li data-topic="search">
+          <h3>Поиск элементов</h3>
+          <p>
+            Группа методов elem.querySelector* – это современный стандарт для
+            поиска элементов.
+          </p>
+        </li>
+        <li data-topic="props">
+          <h3 class="completed">Свойства и атрибуты</h3>
+          <p>
+            elem.textContent, elem.classList, elem.style,
+            elem.hasAttribute(name), elem.getAttribute(name),
+            elem.setAttribute(name, value), elem.removeAttribute(name)
+          </p>
+        </li>
+        <li data-topic="manipulation">
+          <h3>Создание и удаление элементов</h3>
+          <p>
+            DOM API позволяет не только выбирать или изменять существующие, но и
+            удалять, а также создавать новые элементы, после чего добавлять их в
+            документ.
+          </p>
+        </li>
+      </ul>
+
+      <!-- Форма -->
+      <form class="contact-form js-contact-form">
+        <input
+          name="userName"
+          type="text"
+          class="contact-form-input js-username-input"
+          data-length="8"
+          placeholder="Введите имя"
+        />
+        <label for="policy-checkbox">
+          Я <span class="js-username-output">Anonymous</span> согласен с
+          политикой конфиденциальности
+        </label>
+        <button type="submit" class="contact-form-btn js-contact-form-submit">
+          Отправить
+        </button>
+      </form>
+
+      <!-- Аккордеон -->
+      <ul class="accordion-list list js-accordion-list">
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 1</button>
+          <div class="panel js-panel">
+            <p>Lorem ipsum dolor sit amet...</p>
+          </div>
+        </li>
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 2</button>
+          <div class="panel js-panel">
+            <p>Lorem ipsum dolor sit amet...</p>
+          </div>
+        </li>
+        <li class="accordion-list-item">
+          <button class="accordion js-accordion-btn">Item 3</button>
+          <div class="panel js-panel">
+            <p>Lorem ipsum dolor sit amet...</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Список задач -->
+      <div class="task-container">
+        <h2>Список задач</h2>
+        <form id="task-form">
+          <input type="text" id="task-input" placeholder="Введите задачу" />
+          <button type="submit">Добавить</button>
+        </form>
+        <ul id="task-list"></ul>
+      </div>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script type="module" src="./js/lesson-1.js"></script>
+    <script type="module" src="./js/lesson-2.js"></script>
+    <script type="module" src="./js/lesson-3.js"></script>
+    <script type="module" src="./js/lesson-4.js"></script>
+  </body>
+=======
   </head>
   <script type="module" src="./js/lesson-1.js"></script>
   <body></body>
+>>>>>>> 0edbb3a2f337668cc5e00fbabc87abfefce6d431
 </html>

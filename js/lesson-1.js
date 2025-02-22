@@ -136,14 +136,16 @@ console.log(getNumbers(1, 10));
 // Напишите функцию min(a, b), которая принимает 2 числа и возвращает меньшее из них.
  // Нужно добавить проверку, что функция получает именно числа, в противном случае
  // возвращать из функции строку – 'Not a number!' .
-function min(a, b) {
+
+function getMin(a, b) {
     if (typeof a !== "number" || typeof b !== "number") {
         return "Not a number!";
     }
     return a < b ? a : b;
 }
-console.log(min(5, 10));
-console.log(min("a", 10));
+
+console.log(getMin(5, 10));  // 5
+console.log(getMin("a", 10)); // "Not a number!"
 
 // Задание 9
 // Напишите функцию isAdult(age), которая принимает число - возраст пользователя и возвращает true ,
